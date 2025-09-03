@@ -8,11 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-sans">
-    <section
-      class="h-screen bg-contain bg-center bg-no-repeat relative"
-      style="background-image: url('./Banner.png')"
-    ></section>
-
+    <section class="h-screen bg-contain bg-center bg-no-repeat relative">
+      <div
+        class="hidden md:block absolute inset-0 bg-contain bg-center bg-no-repeat"
+        style="background-image: url('./Banner.png')"
+      ></div>
+      <div
+        class="block md:hidden absolute inset-0 bg-contain bg-center bg-no-repeat"
+        style="background-image: url('./Banner_mobile.png')"
+      ></div>
+    </section>
     <div class="fixed top-0 left-0 right-0 bg-black py-3 z-50 shadow-lg">
       <div class="max-w-6xl mx-auto flex justify-end items-center gap-6 px-5">
         <a
