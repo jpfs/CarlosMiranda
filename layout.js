@@ -20,7 +20,7 @@ const getLayout = () => {
       <!-- Logo e Menu juntos -->
       <div class="flex items-center space-x-8">
         <a href="/" class="flex items-center space-x-3">
-          <img src="./photos.main/Seta vermelha.png" class="h-8" alt="Carlos Miranda Logo" />
+          <img src="./photos.main/Seta.vermelha.png" class="h-8" alt="Carlos Miranda Logo" />
           <span class="text-base font-semibold text-white whitespace-nowrap"
             >FORÇA PARA AVANÇAR</span
           >
