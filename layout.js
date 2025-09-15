@@ -29,11 +29,6 @@ const getLayout = () => {
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center space-x-6">
           <a
-            href="/index.html"
-            class="text-white hover:text-blue-400 transition nav-sobre"
-            >Página Inicial</a
-          >
-          <a
             href="/freguesias.html"
             class="text-white hover:text-blue-400 transition nav-freguesias"
             >Freguesias</a
@@ -77,11 +72,6 @@ const getLayout = () => {
     <!-- Mobile Navigation Menu -->
     <div id="mobile-menu" class="md:hidden hidden">
       <div class="px-2 pt-2 pb-3 space-y-1 border-t border-slate-500">
-        <a
-          href="/index.html"
-          class="block px-3 py-2 text-white hover:text-red-400 hover:bg-slate-700 rounded transition-colors duration-200 font-medium"
-          >Página Inicial</a
-        >
         <a
           href="/freguesias.html"
           class="block px-3 py-2 text-white hover:text-red-400 hover:bg-slate-700 rounded transition-colors duration-200 font-medium"
