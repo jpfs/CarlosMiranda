@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notícias - Carlos Miranda</title>
+    <link rel="icon" type="image/png" href="./photos.main/Seta.vermelha.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <meta name="title" content="Carlos Miranda - Força para avançar" />
+    <meta
+      name="description"
+      content="Candidato a Presidente da Câmara Municipal da Sertã"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carlosmiranda2025.pt/" />
+    <meta property="og:title" content="Carlos Miranda - Força para avançar" />
+    <meta
+      property="og:description"
+      content="Candidato a Presidente da Câmara Municipal da Sertã"
+    />
+    <meta
+      property="og:image"
+      content="https://carlosmiranda2025.pt/photos.main/Banner.SEO.png"
+    />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://carlosmiranda2025.pt/" />
+    <meta
+      property="twitter:title"
+      content="Carlos Miranda - Força para avançar"
+    />
+    <meta
+      property="twitter:description"
+      content="Candidato a Presidente da Câmara Municipal da Sertã"
+    />
+    <meta
+      property="twitter:image"
+      content="https://carlosmiranda2025.pt/photos.main/Banner.SEO.png"
+    />
+
+    <style>
+      .noticia-card {
+        position: relative;
+        transition: all 0.3s ease;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .noticia-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+        transition: all 0.3s ease;
+        z-index: 1;
+      }
+
+      .noticia-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .noticia-card:hover::before {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.4) 50%,
+          rgba(0, 0, 0, 0.9) 100%
+        );
+      }
+
+      .noticia-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80%; /* Ocupa apenas 80% da largura */
+        z-index: 2;
+        padding: 1.5rem;
+        text-align: left; /* Alinhamento à esquerda */
+      }
+
+      .noticia-card h3 {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 500; /* Menos bold - era 600 */
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        text-align: left; /* Força alinhamento à esquerda */
+      }
+
+      .noticia-card p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.875rem;
+        line-height: 1.4;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        margin: 0;
+        text-align: left; /* Força alinhamento à esquerda */
+      }
+
+      .noticia-fonte {
+        color: #666;
+        font-size: 1rem; /* Aumentado de 0.875rem */
+        font-weight: 500;
+        margin-top: 15px; /* Aumentado espaçamento de 0.5rem para 15px */
+        text-align: center; /* Centralizado */
+      }
+
+      @media (max-width: 768px) {
+        .noticia-card h3 {
+          font-size: 1.1rem;
+          font-weight: 500; /* Mantém menos bold no mobile */
+        }
+
+        .noticia-fonte {
+          font-size: 0.9rem; /* Um pouco menor no mobile */
+          margin-top: 12px; /* Espaçamento menor no mobile */
+        }
+
+        .noticia-content {
+          padding: 1rem;
+          bottom: 0;
+          width: 80%; /* Mantém 80% no mobile também */
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Main Content -->
+    <div id="main">
+      <!-- Header Section -->
+      <section class="bg-slate-700 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+          <div class="text-center">
+            <h1 class="text-4xl md:text-3xl font-bold text-white">NOTÍCIAS</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notícias Grid -->
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Notícia 1 -->
+            <div class="noticia-container">
+              <article
+                class="noticia-card rounded-2xl h-80 cursor-pointer transition-transform hover:scale-105"
+                style="
+                  background-image: url('./photos.news/542263340_18053512274622069_7812833617592679469_n.jpg');
+                "
+                onclick="window.open('https://www.facebook.com/photo/?fbid=1231716388982959&set=a.605270751627529', '_blank')"
+              >
+                <div class="noticia-content">
+                  <h3>Carlos Miranda recandidato pelo PS à Câmara da Sertã</h3>
+                </div>
+              </article>
+              <p class="noticia-fonte">Beira Baixa TV</p>
+            </div>
+
+            <!-- Notícia 2 -->
+            <div class="noticia-container">
+              <article
+                class="noticia-card rounded-2xl h-80 cursor-pointer transition-transform hover:scale-105"
+                style="
+                  background-image: url('./photos.news/543017998_18053512442622069_1950644668049330928_n.jpg');
+                "
+                onclick="window.open('https://radiocondestavel.pt/noticias/sertaautarquicas-carlos-miranda-apresentou-a-sua-candidatura-a-camara/', '_blank')"
+              >
+                <div class="noticia-content">
+                  <h3>Carlos Miranda apresentou a sua candidatura à câmara</h3>
+                </div>
+              </article>
+              <p class="noticia-fonte">Rádio Condestável</p>
+            </div>
+
+            <!-- Notícia 3 -->
+            <div class="noticia-container">
+              <article
+                class="noticia-card rounded-2xl h-80 cursor-pointer transition-transform hover:scale-105"
+                style="
+                  background-image: url('./photos.news/549757930_18054623588622069_8813367472518759795_n.jpg');
+                "
+                onclick="window.open('https://www.youtube.com/watch?v=gEIuapFkZ5I&t=1s', '_blank')"
+              >
+                <div class="noticia-content">
+                  <h3>Sertã em Debate</h3>
+                </div>
+              </article>
+              <p class="noticia-fonte">Hertz</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        // Adicionar efeitos de hover e animações
+        document.querySelectorAll(".noticia-card").forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transform = "scale(1.05) translateY(-8px)";
+          });
+
+          card.addEventListener("mouseleave", function () {
+            this.style.transform = "scale(1) translateY(0)";
+          });
+        });
+      </script>
+    </div>
+    <script src="./layout.js"></script>
+  </body>
+</html>

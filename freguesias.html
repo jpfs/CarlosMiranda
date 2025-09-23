@@ -48,13 +48,15 @@
   <body class="bg-gray-50">
     <div id="main">
       <!-- Header Section -->
-      <section class="bg-gradient-to-r from-slate-800 to-slate-700 py-8">
+      <section class="bg-gradient-to-r from-slate-800 to-slate-700 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center">
-            <h1 class="text-4xl md:text-4xl font-bold text-white">
-              Candidatos a Presidente de Junta
+          <div class="text-center space-y-3">
+            <h1 class="text-4xl md:text-3xl font-bold text-white">
+              Candidatos a Presidentes de Junta
             </h1>
-            <h2 class="text-2xl md:text-2xl text-white">Freguesias da Sertã</h2>
+            <h2 class="text-2xl md:text-2xl text-white">
+              Freguesias do Concelho
+            </h2>
           </div>
         </div>
       </section>
@@ -65,8 +67,10 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Cabeçudo -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/cabeçudo.png')"
+              data-freguesia="cabeçudo"
+              onclick="handleFreguesia('cabeçudo')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center mb-30"
@@ -77,8 +81,10 @@
 
             <!-- Carvalhal -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/carvalhal.png')"
+              data-freguesia="carvalhal"
+              onclick="handleFreguesia('carvalhal')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center mb-30"
@@ -89,8 +95,10 @@
 
             <!-- Castelo -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/castelo.png')"
+              data-freguesia="castelo"
+              onclick="handleFreguesia('castelo')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center"
@@ -101,32 +109,41 @@
 
             <!-- Cernache do Bonjardim -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/cernache.png')"
+              data-freguesia="cernache"
+              onclick="handleFreguesia('cernache')"
             >
               <div
-                class="freguesia-content h-115 flex flex-col justify-end text-center mt-6"
+                class="freguesia-content h-115 flex flex-col justify-end text-center mt-8"
               >
-                <h3>Cernache do Bonjardim <br />Nesperal e Palhais</h3>
+                <h3>
+                  União de Freguesias de Cernache do Bonjardim,<br />Nesperal e
+                  Palhais
+                </h3>
               </div>
             </article>
 
             <!-- Cumeada -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/cumeada.png')"
+              data-freguesia="cumeada"
+              onclick="handleFreguesia('cumeada')"
             >
               <div
-                class="freguesia-content h-115 flex flex-col justify-end text-center"
+                class="freguesia-content h-115 flex flex-col justify-end text-center mt-4"
               >
-                <h3>Cumeada e Marmeleiro</h3>
+                <h3>União de Freguesias de Cumeada e Marmeleiro</h3>
               </div>
             </article>
 
             <!-- Ermida -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/ermida.png')"
+              data-freguesia="ermida"
+              onclick="handleFreguesia('ermida')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center"
@@ -137,8 +154,10 @@
 
             <!-- Pedrógão Pequeno -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/pedrogão.png')"
+              data-freguesia="pedrogao"
+              onclick="handleFreguesia('pedrogao')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center"
@@ -149,8 +168,10 @@
 
             <!-- Sertã -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/serta.png')"
+              data-freguesia="serta"
+              onclick="handleFreguesia('serta')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center"
@@ -161,8 +182,10 @@
 
             <!-- Troviscal -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/troviscal.png')"
+              data-freguesia="troviscal"
+              onclick="handleFreguesia('troviscal')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center"
@@ -173,8 +196,10 @@
 
             <!-- Várzea dos Cavaleiros -->
             <article
-              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer"
+              class="freguesia-card rounded-2xl h-80 mb-12 cursor-pointer transition-transform hover:scale-105"
               style="background-image: url('./photos/varzea.png')"
+              data-freguesia="varzea"
+              onclick="handleFreguesia('varzea')"
             >
               <div
                 class="freguesia-content h-115 flex flex-col justify-end text-center"
@@ -186,6 +211,22 @@
         </div>
       </section>
     </div>
+
+    <script>
+      function handleFreguesia(freguesia) {
+        window.location.href = `freguesias/freguesia-${freguesia}.html`;
+      }
+      document.querySelectorAll(".freguesia-card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "scale(1.05)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "scale(1)";
+        });
+      });
+    </script>
+
     <script src="./layout.js"></script>
   </body>
 </html>

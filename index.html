@@ -63,16 +63,345 @@
           class="block md:hidden w-full h-auto"
         />
       </section>
-      <!-- Adicionar mais conteúdo conforme necessário 
-      <section class="py-16 bg-gray-100">
-        <div class="max-w-screen-xl mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Bem-vindo</h2>
-          <p class="text-lg text-center text-gray-700">
-            Juntos por um futuro melhor para a nossa comunidade.
-          </p>
+
+      <!-- Nova Seção de Apresentação -->
+      <section
+        class="bg-gradient-to-b from-slate-600 to-slate-700 py-8 text-white"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center space-y-4">
+            <!-- Título Principal -->
+            <h2 class="text-xl md:text-2xl font-bold mb-4">
+              O nosso concelho é feito de pessoas que trabalham, sonham e
+              acreditam num futuro melhor.
+            </h2>
+
+            <!-- Conteúdo de Apresentação -->
+            <div class="space-y-3 max-w-4xl mx-auto">
+              <p class="text-base md:text-lg leading-relaxed">
+                Apresento-me novamente como candidato à Câmara Municipal da
+                Sertã, com a determinação para continuar o caminho de
+                desenvolvimento que juntos iniciámos.
+              </p>
+
+              <p class="text-base md:text-lg leading-relaxed">
+                Uma candidatura que valoriza as nossas raízes, respeita as
+                nossas tradições e abre portas a novas oportunidades e inovação.
+              </p>
+
+              <!-- Destaque Final -->
+              <div class="flex items-center justify-center space-x-3 pt-2">
+                <span class="text-lg">⏩</span>
+                <p class="text-lg md:text-xl font-semibold">
+                  Juntos, temos mais Força para Avançar!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      -->
+
+      <!-- Seção do Vídeo -->
+      <section class="bg-gray-100 py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Container do Vídeo -->
+          <div class="relative rounded-xl shadow-xl overflow-hidden">
+            <div class="aspect-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/iBS7kleMpp4"
+                title="Carlos Miranda - Força para Avançar"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="w-full h-full"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Obras Avançadas -->
+      <section class="bg-gradient-to-b from-slate-600 to-slate-700 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Título da Seção -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+              OBRAS AVANÇADAS NOS ÚLTIMOS ANOS
+            </h2>
+          </div>
+
+          <!-- Grid de Obras -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Requalificação do Largo -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Largo\ Guimarães.PNG');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <p
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Requalificação do Largo Guimarães com estacionamento junto
+                      ao Castelo
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <h4 class="font-semibold text-sm italic text-white">
+                      Cerca de 800 mil euros
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                SERTÃ
+              </p>
+            </div>
+
+            <!-- Mercado Municipal -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Mercado\ Municipal.PNG');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-white text-center leading-tight"
+                    >
+                      Mercado Municipal
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Cerca de 2 milhões de euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                CERNACHE DO BONJARDIM
+              </p>
+            </div>
+
+            <!-- Espaço de Incubação -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Cowork\ Space.PNG');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Espaço de Incubação e Cowork Nuno Álvares Pereira
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Cerca de 1,2 milhões de euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                CERNACHE DO BONJARDIM
+              </p>
+            </div>
+
+            <!-- Reforço Estrutural -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Escola\ Secundária.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Reforço estrutural da Escola Secundária
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Cerca de 2 milhões de euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                SERTÃ
+              </p>
+            </div>
+
+            <!-- Projeto Rua A -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Rua\ A.PNG');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Projeto Rua A
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Mais de 500 mil euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                SERTÃ
+              </p>
+            </div>
+
+            <!-- Requalificação da Zona Industrial -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Zona\ Industrial.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Requalificação da Zona Industrial
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Cerca de 800 mil euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                SERTÃ
+              </p>
+            </div>
+
+            <!-- Requalificação da Praia Fluvial -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Troviscal.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Requalificação da Praia Fluvial do Troviscal
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Cerca de 800 mil euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                TROVISCAL
+              </p>
+            </div>
+
+            <!-- Requalificação da Escola -->
+            <div class="obra-container">
+              <div
+                class="obra-card bg-white rounded-2xl h-64 relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                style="
+                  background-image: url('./photos.obras/Escola\ Padre\ António.jpeg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent"
+                ></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                  <div class="flex-1 flex items-center justify-center">
+                    <h4
+                      class="font-semibold text-sm text-white text-center leading-tight"
+                    >
+                      Requalificação da Escola Padre António Lourenço Farinha
+                    </h4>
+                  </div>
+                  <div class="text-center">
+                    <p class="font-semibold text-sm italic text-white">
+                      Mais de 2 milhões de euros
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-white text-center mt-2">
+                SERTÃ
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./layout.js"></script>
   </body>

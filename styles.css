@@ -1,15 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Gotham";
+  src: url("./fonts/Gotham-Book.woff2") format("woff2"),
+    url("./fonts/Gotham-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Gotham";
+  src: url("./fonts/Gotham-Bold.woff2") format("woff2"),
+    url("./fonts/Gotham-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 *
   :not([class*="fa-"]):not(.fab):not(.fas):not(.far):not(.fal):not(.fad):not(
     .fa
   ) {
-  font-family: "Gothic A1", sans-serif !important;
+  font-family: "Gotham", sans-serif !important;
 }
 
 html,
 body {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Gotham", sans-serif;
 }
 
 h1,
@@ -30,11 +43,11 @@ header,
 footer,
 section,
 article {
-  font-family: "Gothic A1", sans-serif !important;
+  font-family: "Gotham", sans-serif !important;
 }
 
 a {
-  font-family: "Gothic A1", sans-serif !important;
+  font-family: "Gotham", sans-serif !important;
 }
 
 .fa,
